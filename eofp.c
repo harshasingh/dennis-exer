@@ -1,0 +1,1 @@
+#include <stdio.h>int main(void){  printf("Press any key\n\n");  printf("The end of file char here is %d\n",EOF);  printf("The expression getchar() != EOF evaluates to %d\n", getchar() != EOF);      //0 if [ctrl+d] pressed  return 0;}
