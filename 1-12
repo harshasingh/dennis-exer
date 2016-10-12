@@ -1,0 +1,20 @@
+ //Write a program that prints its input one word per line. 
+ #include<stdio.h>
+ int main(void)
+ {  int ch; 
+ int blank=0;   
+ while((ch = getchar()) != EOF)  { 
+ if(ch ==' ' ||ch =='\n' ||ch =='\t')     {     
+     if(blank == 0)        /*one blank encountered*/      {   
+        blank = 1;     
+         putchar('\n');   
+      }   
+    } 
+    
+    else{     
+    putchar(ch);     
+    blank=0;   
+    }
+   }  
+    return 0; 
+  }     
